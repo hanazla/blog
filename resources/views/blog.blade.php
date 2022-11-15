@@ -99,165 +99,156 @@
         </div>
 
     </header><!-- End Header -->
-
-    <main id="main">
-
-        <!-- ======= Hero Slider Section ======= -->
-        <section id="hero-slider" class="hero-slider">
-            <div class="container-md" data-aos="fade-in">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="swiper sliderFeaturedPosts">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="single-post.html" class="img-bg d-flex align-items-end"
-                                        style="background-image: url('public/frontend/assets/img/post-slide-1.jpg')">
-                                        <div class="img-bg-inner">
-                                            <h2>The Best Homemade Masks for Face (keep the Pimples Away)</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
-                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
-                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
-                                                necessitatibus rem atque.</p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="single-post.html" class="img-bg d-flex align-items-end"
-                                        style="background-image: url('public/frontend/assets/img/post-slide-2.jpg')">
-                                        <div class="img-bg-inner">
-                                            <h2>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New
-                                                Haircut</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
-                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
-                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
-                                                necessitatibus rem atque.</p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="single-post.html" class="img-bg d-flex align-items-end"
-                                        style="background-image: url('public/frontend/assets/img/post-slide-3.jpg')">
-                                        <div class="img-bg-inner">
-                                            <h2>13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
-                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
-                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
-                                                necessitatibus rem atque.</p>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <a href="single-post.html" class="img-bg d-flex align-items-end"
-                                        style="background-image: url('public/frontend/assets/img/post-slide-4.jpg');">
-                                        <div class="img-bg-inner">
-                                            <h2>9 Half-up/half-down Hairstyles for Long and Medium Hair</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
-                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
-                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
-                                                necessitatibus rem atque.</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="custom-swiper-button-next">
-                                <span class="bi-chevron-right"></span>
-                            </div>
-                            <div class="custom-swiper-button-prev">
-                                <span class="bi-chevron-left"></span>
-                            </div>
-
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End Hero Slider Section -->
-
-
-
-        <section id="search-result" class="search-result">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <h3 class="category-title">Postingan Terbaru</h3>
-
-                        @foreach($data as $post_terbaru)
-                        <div class="d-md-flex post-entry-2 small-img">
-                            <a href="#" class="me-4 thumbnail">
-                                <img src="{{ $post_terbaru -> gambar}}" alt="" class="img-fluid">
-                            </a>
-                            <div>
-                                <div class="post-meta"><span class="date">{{$post_terbaru->category->name}}</span> <span
-                                        class="mx-1">&bullet;</span>
-                                    <span>{{$post_terbaru->created_at->diffForHumans()}}</span>
-                                </div>
-                                <h3><a href="#">{{$post_terbaru->judul}}</a></h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat
-                                    exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas.</p>
-                                <div class="d-flex align-items-center author">
-                                    <div class="name">
-                                        <h3 class="m-0 p-0">{{$post_terbaru->users->name}}</h3>
+    <!-- ======= Hero Slider Section ======= -->
+    <section id="hero-slider" class="hero-slider">
+        <div class="container-md" data-aos="fade-in">
+            <div class="row">
+                <div class="col-12">
+                    <div class="swiper sliderFeaturedPosts">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="single-post.html" class="img-bg d-flex align-items-end"
+                                    style="background-image: url('public/frontend/assets/img/post-slide-1.jpg')">
+                                    <div class="img-bg-inner">
+                                        <h2>The Best Homemade Masks for Face (keep the Pimples Away)</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                            est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                            ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                            necessitatibus rem atque.</p>
                                     </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="single-post.html" class="img-bg d-flex align-items-end"
+                                    style="background-image: url('public/frontend/assets/img/post-slide-2.jpg')">
+                                    <div class="img-bg-inner">
+                                        <h2>17 Pictures of Medium Length Hair in Layers That Will Inspire Your New
+                                            Haircut</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                            est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                            ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                            necessitatibus rem atque.</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="single-post.html" class="img-bg d-flex align-items-end"
+                                    style="background-image: url('public/frontend/assets/img/post-slide-3.jpg')">
+                                    <div class="img-bg-inner">
+                                        <h2>13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                            est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                            ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                            necessitatibus rem atque.</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="single-post.html" class="img-bg d-flex align-items-end"
+                                    style="background-image: url('public/frontend/assets/img/post-slide-4.jpg');">
+                                    <div class="img-bg-inner">
+                                        <h2>9 Half-up/half-down Hairstyles for Long and Medium Hair</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                            est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                            ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                            necessitatibus rem atque.</p>
+                                    </div>
+                                    < </a>
+                            </div>
+                        </div>
+                        <div class="custom-swiper-button-next">
+                            <span class="bi-chevron-right"></span>
+                        </div>
+                        <div class="custom-swiper-button-prev">
+                            <span class="bi-chevron-left"></span>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="search-result" class="search-result">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h3 class="category-title">Postingan Terbaru</h3>
+
+                    @foreach($data as $post_terbaru)
+                    <div class="d-md-flex post-entry-2 small-img">
+                        <a href="{{ route('blog.isi', $post_terbaru->slug)}}" class="me-4 thumbnail">
+                            <img src="{{ $post_terbaru -> gambar}}" alt="" class="img-fluid" style="height: 150px;">
+                        </a>
+                        <div>
+                            <div class="post-meta"><span class="date">{{$post_terbaru->category->name}}</span>
+                                <span class="mx-1">&bullet;</span>
+                                <span>{{$post_terbaru->created_at->diffForHumans()}}</span>
+                            </div>
+                            <h3><a href="#">{{$post_terbaru->judul}}</a></h3>
+                            <!-- <p>{{$post_terbaru->content}}</p> -->
+                            <div class="d-flex align-items-center author">
+                                <div class="name">
+                                    <h3 class="m-0 p-0">{{$post_terbaru->users->name}}</h3>
                                 </div>
                             </div>
                         </div>
-                        @endforeach
-
-                        <!-- Paging -->
-                        <div class="text-start py-4">
-                            <div class="custom-pagination">
-                                <a href="#" class="prev">Prevous</a>
-                                <a href="#" class="active">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>
-                                <a href="#" class="next">Next</a>
-                            </div>
-                        </div><!-- End Paging -->
-
                     </div>
+                    @endforeach
 
-                    <div class="col-md-3">
-                        <div class="aside-block">
-                            <h3 class="aside-title">Categories</h3>
-                            <ul class="aside-links list-unstyled">
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Business</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Culture</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Sport</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Food</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Politics</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Celebrity</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Startups</a></li>
-                                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Travel</a></li>
-                            </ul>
-                        </div><!-- End Categories -->
 
-                        <div class="aside-block">
-                            <h3 class="aside-title">Tags</h3>
-                            <ul class="aside-tags list-unstyled">
-                                <li><a href="category.html">Business</a></li>
-                                <li><a href="category.html">Culture</a></li>
-                                <li><a href="category.html">Sport</a></li>
-                                <li><a href="category.html">Food</a></li>
-                                <li><a href="category.html">Politics</a></li>
-                                <li><a href="category.html">Celebrity</a></li>
-                                <li><a href="category.html">Startups</a></li>
-                                <li><a href="category.html">Travel</a></li>
-                            </ul>
-                        </div><!-- End Tags -->
+                    <!-- Paging -->
+                    <div class="text-start py-4">
+                        <div class="custom-pagination">
+                            <a href="#" class="prev">Prevous</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#" class="next">Next</a>
+                        </div>
+                    </div><!-- End Paging -->
 
-                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="aside-block">
+                        <h3 class="aside-title">Categories</h3>
+                        <ul class="aside-links list-unstyled">
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Business</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Culture</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Sport</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Food</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Politics</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Celebrity</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Startups</a></li>
+                            <li><a href="category.html"><i class="bi bi-chevron-right"></i> Travel</a></li>
+                        </ul>
+                    </div><!-- End Categories -->
+
+                    <div class="aside-block">
+                        <h3 class="aside-title">Tags</h3>
+                        <ul class="aside-tags list-unstyled">
+                            <li><a href="category.html">Business</a></li>
+                            <li><a href="category.html">Culture</a></li>
+                            <li><a href="category.html">Sport</a></li>
+                            <li><a href="category.html">Food</a></li>
+                            <li><a href="category.html">Politics</a></li>
+                            <li><a href="category.html">Celebrity</a></li>
+                            <li><a href="category.html">Startups</a></li>
+                            <li><a href="category.html">Travel</a></li>
+                        </ul>
+                    </div><!-- End Tags -->
 
                 </div>
             </div>
-        </section>
-    </main><!-- End #main -->
+        </div>
+    </section>
 
-    <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
 
         <div class="footer-content">
