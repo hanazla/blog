@@ -19,6 +19,9 @@ Route::get('/', 'App\Http\Controllers\BlogController@index');
 //     return view('blog.isi_post');
 // });
 Route::get('/isi-post/{slug}', 'App\Http\Controllers\BlogController@isi_blog')->name('blog.isi');
+Route::get('/list-post', 'App\Http\Controllers\BlogController@list_blog')->name('blog.list');
+Route::get('/list-category/{category}', 'App\Http\Controllers\BlogController@list_category')->name('blog.category');
+Route::get('/cari','App\Http\Controllers\BlogController@cari')->name('blog.cari');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
