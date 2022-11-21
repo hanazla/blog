@@ -1,5 +1,5 @@
 @extends('template_backend.home')
-@section('sub-judul', 'Tambah Pengguna')
+@section('sub-judul', 'Ubah Pengguna')
 @section('content')
 
 @if (count($errors) > 0)

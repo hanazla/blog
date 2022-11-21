@@ -26,6 +26,10 @@
     <!-- Template Main CSS Files -->
     <link href="{{asset('public/frontend/assets/css/variables.css')}}" rel="stylesheet">
     <link href="{{asset('public/frontend/assets/css/main.css')}}" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=637a214ecfe2d50019eb6cb1&product=sticky-share-buttons&source=platform"
+        async="async">
+    </script>
 </head>
 
 <body>
@@ -42,9 +46,9 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="{{url('')}}">Blog</a></li>
-                    <li><a href="{{route('blog.list')}}">Artikel</a></li>
-                    <li class="dropdown"><a href="#"><span>Categories</span> <i
+                    <li><a href="{{url('')}}">Beranda</a></li>
+                    <li><a href="{{route('blog.list')}}">Blog</a></li>
+                    <li class="dropdown"><a href="#"><span>Kategori</span> <i
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             @foreach($category_widget as $result1)

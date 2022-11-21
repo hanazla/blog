@@ -8,7 +8,7 @@
 </div>
 @endif
 
-<a href="{{ route('user.create') }}" class="btn btn-info btn-sm mb-3">Tambah Kategori</a>
+<a href="{{ route('category.create') }}" class="btn btn-info btn-sm mb-3">Tambah Kategori</a>
 <table class=" table table-striped table-sm table-bordered">
     <thead>
         <tr>
@@ -20,8 +20,8 @@
     <tbody>
 
         @foreach ($category as $result => $hasil) <tr>
-            <td>{{ $result + $category-> firstitem()}}</td>
-            <td>{{ $hasil -> name}}</td>
+            <td>{{ $result + $category->firstitem()}}</td>
+            <td>{{ $hasil-> name}}</td>
             <td>
                 <form action="{{ route('category.destroy', $hasil->id)}}" method="POST">
                     @csrf

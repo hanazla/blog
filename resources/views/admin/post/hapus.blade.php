@@ -1,5 +1,5 @@
 @extends('template_backend.home')
-@section('sub-judul', 'Recently Deleted')
+@section('sub-judul', 'Trashed Artikel')
 @section('content')
 
 @if(Session::has('success'))
@@ -24,7 +24,7 @@
         @foreach ($post as $result => $hasil) <tr>
             <td>{{ $result + $post-> firstitem()}}</td>
             <td>{{ $hasil -> judul}}</td>
-            <td>{{ $hasil -> category->name}}</td>
+            <td>{{ $hasil -> name}}</td>
             <td>@foreach($hasil->tags as $tag)
                 <ul>
                     <li>{{$tag -> name}}</li>

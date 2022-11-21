@@ -15,31 +15,31 @@
             <li class="menu-header">Starter</li>
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-book-open"></i>
-                    <span>Artikel</span></a>
+                    <span>Postingan</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="{{ route('post.index') }}">Daftar Artikel</a></li>
-                    <li><a class="nav-link" href="{{ route('post.tampil_hapus') }}">Recently Deleted</a></li>
+                    <li><a class="nav-link" href="{{ route('post.tampil_hapus') }}">Trashed Artikel</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-clipboard"></i>
                     <span>Kategori</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="{{ route('category.index') }}">Daftar Kategori</a></li>
+                    <li><a class="nav-link" href="{{ route('category.index') }}">List Kategori</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-hashtag"></i>
                     <span>Tag</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="{{ route('tag.index') }}">Daftar Tag</a></li>
+                    <li><a class="nav-link" href="{{ route('tag.index') }}">List Tag</a></li>
                 </ul>
             </li>
             <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-users"></i>
                     <span>Users</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="{{ route('user.index') }}">Daftar User</a></li>
+                    <li><a class="nav-link" href="{{ route('user.index') }}">List User</a></li>
             </li>
     </aside>
 </div>

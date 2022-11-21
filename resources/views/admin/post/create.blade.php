@@ -51,7 +51,7 @@
     </div>
 
     <div class=" form-group">
-        <button class="btn btn-primary">Tambah Artikel</button>
+        <button class="btn btn-primary">Tambah Blog</button>
     </div>
 
 </form>

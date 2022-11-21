@@ -19,18 +19,21 @@
                             <h3><a href="single-post.html">{{$list_post->judul}}</a></h3>
                             <div class="d-flex align-items-center author">
                                 <div class="name">
-                                    <h3 class="m-0 p-0">{{$list_post->users->name}}</h3>
+                                    <h3 class="m-0 p-0">uploaded by {{$list_post->users->name}}</h3>
                                 </div>
+                                <!-- INI YANG BUAT TAG NYA -->
+                                <p>{{$list_post->name}}</p>
                             </div>
                         </div>
                     </div>
                     @endforeach
-
+                    {{ $data->links() }}
                 </div>
-                {{ $data->render() }}
+                <div class="col-md-3">
+                    @include('template_blog.widget')
+                </div>
             </div>
         </div>
-
     </section>
 </main>
 
