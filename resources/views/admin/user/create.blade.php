@@ -28,14 +28,14 @@
         <label>Email</label>
         <input type="email" class="form-control" name="email">
     </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
         <label>Level Pengguna</label>
         <select class="form-control" name="level">
             <option value="" holder>Pilih level pengguna</option>
-            <option value="1">Administrator</option>
-            <option value="0">Penulis</option>
+            <option value="0">Administrator</option>
+            <option value="1">Penulis</option>
         </select>
-    </div>
+    </div> -->
     <div class="form-group">
         <label>Password</label>
         <input type="password" class="form-control" name="password">

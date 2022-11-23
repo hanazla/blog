@@ -25,12 +25,12 @@
             <td>{{ $result + $user-> firstitem()}}</td>
             <td>{{ $hasil -> name}}</td>
             <td>{{ $hasil -> email}}</td>
-            <td>@if($hasil->level)
+            <!-- <td>@if($hasil->level)
                 <span class="badge badge-info">Administrator</span>
                 @else
                 <span class="badge badge-warning">Penulis</span>
                 @endif
-            </td>
+            </td> -->
             <td>
                 <form action="{{ route('user.destroy', $hasil->id)}}" method="POST">
                     @csrf

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Posts;
 use App\Models\Tags;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -150,7 +150,7 @@ class PostController extends Controller
         $post = Posts::findorfail($id);
         $post -> delete();
         
-        return redirect()->back()->with('success', 'Artikel Disimpan ke Recently Deleted');
+        return redirect()->back()->with('success', 'Artikel Disimpan ke Trashed Artikel');
     }
 
     public function tampil_hapus() {

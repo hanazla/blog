@@ -16,7 +16,7 @@
                                     class="mx-1">&bullet;</span>
                                 <span>{{$list_post->created_at}}</span>
                             </div>
-                            <h3><a href="single-post.html">{{$list_post->judul}}</a></h3>
+                            <h3><a href="{{ route('blog.isi', $list_post->slug)}}">{{$list_post->judul}}</a></h3>
                             <div class="d-flex align-items-center author">
                                 <div class="name">
                                     <h3 class="m-0 p-0">uploaded by {{$list_post->users->name}}</h3>

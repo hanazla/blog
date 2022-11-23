@@ -10,11 +10,3 @@
 </div>
 
 <!-- TAG -->
-<div class="aside-block">
-    <h3 class="aside-title">Tags</h3>
-    <ul class="aside-tags list-unstyled">
-        @foreach($tag_widget as $result)
-        <li><a href="{{ route('blog.tags', $result->slug)}}">{{ $result -> name}}</a></li>
-        @endforeach
-    </ul>
-</div>
